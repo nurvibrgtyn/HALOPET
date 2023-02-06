@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:halopet/maps/maps.dart';
 import 'package:halopet/pages/clinics/clinics_page.dart';
 import 'package:halopet/pages/doctors/doctor_page.dart';
 import 'package:halopet/pages/petshop/petshop_page.dart';
@@ -172,7 +174,7 @@ class _UserHomeState extends State<UserHome> {
                     pageCard: WikiPage(),
                   ),
                   CategoryCard(
-                    categoryName: 'Clinic',
+                    categoryName: 'Clinics',
                     iconImagePath: 'image/stethoscope.png',
                     pageCard: ClinicsPage(),
                   ),
@@ -249,7 +251,6 @@ class _UserHomeState extends State<UserHome> {
                     ),
                   ],
                 )),
-
           ],
         ),
       ),

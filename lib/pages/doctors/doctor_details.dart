@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:halopet/pages/account/account.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 
@@ -18,21 +17,18 @@ class _DoctorDetailsPageState extends State<DoctorDetailsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          user.email!,
+          'Contact Us',
           style: TextStyle(fontSize: 16),
         ),
-        actions: [
-          GestureDetector(
-            onTap: () {
-              FirebaseAuth.instance.signOut();
-            },
-            child: Icon(Icons.logout),
-          ),
-        ],
       ),
       backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Column(
+      body: Center(
+        child: MaterialButton(
+          onPressed: () async {},
+          color: Colors.orange,
+          child: Text('Send Message',
+          style: TextStyle(color: Colors.white),
+          ),
         ),
       ),
     );

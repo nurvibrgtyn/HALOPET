@@ -3,6 +3,7 @@ import 'package:halopet/main.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:halopet/pages/home/home_page.dart';
+import 'package:halopet/pages/search/search_page.dart';
 
 class maps extends StatefulWidget {
   const maps({Key? key}) : super(key: key);
@@ -55,7 +56,7 @@ class _mapsState extends State<maps> {
     return Scaffold(
       appBar: AppBar(
         leading: BackButton(
-            onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => maps()),
+            onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => SearchPage()),
     ),
 
         color: Colors.white,
@@ -76,7 +77,7 @@ class _mapsState extends State<maps> {
       floatingActionButton: FloatingActionButton.extended(
 
         onPressed: () {
-          CariCozy();
+          SearchClinic();
         },
         label: const Text("Search Nearest Clinic"),
         icon: const Icon(Icons.directions),
@@ -86,7 +87,7 @@ class _mapsState extends State<maps> {
     );
   }
 
-  Future<void> CariCozy() async {
+  Future<void> SearchClinic() async {
     final GoogleMapController controller = await _controller.future;
     controller.animateCamera(CameraUpdate.newCameraPosition(targetPosition));
   }

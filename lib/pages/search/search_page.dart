@@ -1,12 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:halopet/pages/doctors/doctor_page.dart';
-import 'package:halopet/pages/petshop/petshop_page.dart';
-import 'package:halopet/pages/search/doctor_search_page.dart';
-import 'package:halopet/pages/vaccine/vaccine_page.dart';
-import 'package:halopet/pages/wiki/wiki_page.dart';
-import 'package:halopet/util/category_card.dart';
+import 'package:halopet/maps/petshop_map.dart';
 import 'package:halopet/util/search_card.dart';
 
 import '../../maps/maps.dart';
@@ -42,7 +37,7 @@ class _SearchPageState extends State<SearchPage> {
               iconImagePath: 'image/pet-shop.png',
               categoryName: 'PETSHOP',
               categoryDesc: 'Search for nearest Pet Shops',
-              pageCard: PetShopPage(),
+              pageCard: petshop_maps(),
             ),
           ],
         ),

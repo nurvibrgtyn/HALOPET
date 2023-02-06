@@ -24,13 +24,41 @@ class GetUserData extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
+                  'First Name : ',
+                  style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                ),
+                Text(
                   '${data['first name']}',
+                ),
+                Text(
+                    '\nLast Name : ',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
                 ),
                 Text(
                     '${data['last name']}',
                 ),
                 Text(
-                    '${data['email']}',
+                    '\ne-mail : ',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                ),
+                Text(
+                  '${data['email']}',
+                ),
+                Text(
+                  '\nPhone Number : ',
+                  style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
                 ),
                 Text(
                   '${data['phone']}',

@@ -2,8 +2,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:halopet/maps/maps.dart';
 import 'package:halopet/read%20data/get_clinic_data.dart';
-import 'package:halopet/maps/clinic_map.dart';
 
 
 class ClinicsPage extends StatefulWidget {
@@ -63,7 +63,7 @@ class _ClinicsPageState extends State<ClinicsPage> {
                             onTap: () {
                               Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => ClinicMapPage())
+                                  MaterialPageRoute(builder: (context) => maps())
                               );
                             },
                         ),
