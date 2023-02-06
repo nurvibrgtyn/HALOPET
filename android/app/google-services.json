@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "479114771895",
+    "project_id": "halopet-cd737",
+    "storage_bucket": "halopet-cd737.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479114771895:android:85e23fefa54d19ff3d3c32",
+        "android_client_info": {
+          "package_name": "com.example.halopet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479114771895-0nnd77inijq832m2ncspfbes99m17jq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP-4DG5jtAt4Hwr2nfFvHAVxyB3JfEGYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479114771895-0nnd77inijq832m2ncspfbes99m17jq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
