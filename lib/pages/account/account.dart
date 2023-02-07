@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:halopet/read%20data/get_user_data.dart';
@@ -33,18 +34,26 @@ class _AccountPageState extends State<AccountPage> {
       resizeToAvoidBottomInset: false,
       
       appBar: AppBar(
-        title: Text(
-          'My Profile',
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        title: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            'My Profile',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
         ),
         actions: [GestureDetector(
           onTap: () {
             FirebaseAuth.instance.signOut();
           },
-          child: Icon(Icons.logout),
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Icon(Icons.logout),
+          ),
           ),
         ],
       ),
+
+
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -59,8 +68,8 @@ class _AccountPageState extends State<AccountPage> {
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: ListTile(
+                        leading: Icon(Icons.person_outline_rounded),
                         title: GetUserData(userId: docIDs[index]),
-                        tileColor: Colors.grey[200],
                         ),
                     );
                     },
