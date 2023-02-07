@@ -1,34 +1,18 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: prefer_const_constructors
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 
 
-class DoctorDetailsPage extends StatefulWidget {
-  const DoctorDetailsPage({Key? key}) : super(key: key);
-
-  @override
-  State<DoctorDetailsPage> createState() => _DoctorDetailsPageState();
-}
-
-class _DoctorDetailsPageState extends State<DoctorDetailsPage> {
-  final user = FirebaseAuth.instance.currentUser!;
+class DoctorDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
-          'Contact Us',
+          'Doctor Details',
           style: TextStyle(fontSize: 16),
-        ),
-      ),
-      backgroundColor: Colors.white,
-      body: Center(
-        child: MaterialButton(
-          onPressed: () async {},
-          color: Colors.orange,
-          child: Text('Send Message',
-          style: TextStyle(color: Colors.white),
-          ),
         ),
       ),
     );

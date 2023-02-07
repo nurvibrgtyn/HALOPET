@@ -54,8 +54,11 @@ class _LoginPageState extends State<LoginPage> {
                   //email textfield
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                    child: TextField(
+                    child: TextFormField(
                       controller: _emailController,
+                      validator: (value) {
+                        return value!.isNotEmpty ? null : 'Please insert email';
+                      },
                       decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),

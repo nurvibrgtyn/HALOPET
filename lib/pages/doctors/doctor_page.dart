@@ -57,7 +57,9 @@ class _DoctorPageState extends State<DoctorPage> {
                       return Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: ListTile(
+                          leading: Icon(Icons.medical_information_outlined),
                           title: GetDocData(doctorId: docIDs[index]),
+                          trailing: Icon(Icons.navigate_next_rounded),
                           tileColor: Colors.orange[200],
                           onTap: () {
                             Navigator.push(

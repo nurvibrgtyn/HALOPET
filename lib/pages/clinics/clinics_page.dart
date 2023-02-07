@@ -59,6 +59,7 @@ class _ClinicsPageState extends State<ClinicsPage> {
                         child: ListTile(
                           leading: Icon(Icons.medical_services),
                           title: GetClinicData(clinicId: docIDs[index]),
+                          trailing: Icon(Icons.navigate_next_rounded),
                           tileColor: Colors.orange[200],
                             onTap: () {
                               Navigator.push(

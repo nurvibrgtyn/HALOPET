@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:halopet/main.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:halopet/pages/home/home.dart';
 import 'package:halopet/pages/home/home_page.dart';
 import 'package:halopet/pages/search/search_page.dart';
 
@@ -56,10 +57,10 @@ class _mapsState extends State<maps> {
     return Scaffold(
       appBar: AppBar(
         leading: BackButton(
-            onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => SearchPage()),
+            onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => HomePage()),
     ),
 
-        color: Colors.white,
+        color: Colors.black,
 
         ),//
         title: const Text("Clinic Terdekat"),

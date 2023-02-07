@@ -51,7 +51,7 @@ class _UserHomeState extends State<UserHome> {
                         user.email!,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 24
+                          fontSize: 22
                         ),
                       ),
 
@@ -77,6 +77,7 @@ class _UserHomeState extends State<UserHome> {
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: Container(
                 padding: EdgeInsets.all(20),
+                //dekorasi card
                 decoration: BoxDecoration(
                   color: Colors.blueGrey,
                   borderRadius: BorderRadius.circular(20),

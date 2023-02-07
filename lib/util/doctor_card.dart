@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:halopet/pages/doctors/doctor_details.dart';
+import 'package:halopet/pages/doctors/doctor_page.dart';
+
+import '../pages/doctors/doctor_details.dart';
 
 class DoctorCard extends StatelessWidget {
 

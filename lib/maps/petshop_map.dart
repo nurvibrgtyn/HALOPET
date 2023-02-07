@@ -5,6 +5,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:halopet/pages/home/home_page.dart';
 import 'package:halopet/pages/search/search_page.dart';
 
+import '../pages/home/home.dart';
+
 class petshop_maps extends StatefulWidget {
   const petshop_maps({Key? key}) : super(key: key);
 
@@ -56,10 +58,10 @@ class _petshop_mapsState extends State<petshop_maps> {
     return Scaffold(
       appBar: AppBar(
         leading: BackButton(
-            onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => SearchPage()),
+            onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => HomePage()),
     ),
 
-        color: Colors.white,
+        color: Colors.black,
 
         ),//
         title: const Text("Pet Shop Terdekat"),
